@@ -1,10 +1,9 @@
 import pyautogui
 import time
-import sys
 
-delay = 2 
+delay = 60
 
-print('Press Ctrl-C to quit')
+print('Press Ctrl-C or KeyboardInterrupt to quit') 
 
 try:
     while True:
@@ -12,4 +11,3 @@ try:
         time.sleep(delay)
 except KeyboardInterrupt:
     print('Auto clicker stopped')
-    sys.exit()
